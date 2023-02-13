@@ -1,4 +1,4 @@
-import "./App.css";
+
 import Layout from "./layout";
 
 const App = () => {

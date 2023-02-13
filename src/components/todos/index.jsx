@@ -1,7 +1,15 @@
 import React from "react";
+import Todo from "../todo";
+import { TodosList } from "./styled";
 
 const Todos = () => {
-  return <div>Todos</div>;
+  return (
+    <TodosList>
+      <Todo />
+      <Todo />
+      <Todo />
+    </TodosList>
+  );
 };
 
 export default Todos;
