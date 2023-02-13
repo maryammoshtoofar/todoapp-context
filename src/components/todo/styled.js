@@ -12,11 +12,11 @@ export const TodoTitle = styled.span`
   background-color: ${({ theme }) => theme.colors.white};
   width: 100%;
   padding: 10px 1px;
+  text-decoration: ${(props) => (props.completed ? "line-through" : "none")};
 `;
 
 export const ActionButton = styled.button`
-  background-color: ${( props ) => props.bg};
+  background-color: ${(props) => props.bg};
   color: ${({ theme }) => theme.colors.white};
   padding: 5px 10px;
 `;
-

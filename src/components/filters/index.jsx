@@ -2,10 +2,10 @@ import { Select } from "./styled";
 
 const Filters = () => {
   return (
-    <Select>
-      <option selected>All</option>
-      <option>Done</option>
-      <option>Undone</option>
+    <Select defaultValue="All">
+      <option value="All">All</option>
+      <option value="Done"></option>
+      <option value="Undone"></option>
     </Select>
   );
 };
