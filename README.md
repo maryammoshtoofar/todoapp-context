@@ -3,10 +3,15 @@
 Simple to-do app using
 
 -AXIOS
+
 -React Context and useReducer
+
 -Styled-components
+
 -Json-server REST API
+
 -React Toastify
+
 -Vite(Dev Server)
 
 To install and run:
