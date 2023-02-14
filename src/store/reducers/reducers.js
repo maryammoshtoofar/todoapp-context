@@ -10,7 +10,7 @@ export const TodosReducer = (state, action) => {
       return state.filter((todo) => todo.id !== action.todoId);
     case ACTIONTYPES.TOGGLETODO:
       return state.map((todo) =>
-        todo.id === action.todoId
+        todo.id === action.payload
           ? { ...todo, completed: !todo.completed }
           : todo
       );

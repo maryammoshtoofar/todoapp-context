@@ -1,6 +1,6 @@
 import axios from "axios";
 import { BASE_URL } from "../config/constants";
-import { addTodo, readAllTodos } from "../store/actions/actions";
+import { addTodo, readAllTodos, toggleTodo } from "../store/actions/actions";
 import { GenerateTodoURL } from "../utils/utils";
 import { v4 as uuidv4 } from "uuid";
 
@@ -17,4 +17,13 @@ export const AddTodoAPI = async (dispatch, inputValue) => {
   axios.post(BASE_URL, newTodo).then((res) => dispatch(addTodo(newTodo)));
 };
 
+export const ToggleTodoAPI = (dispatch, todo) => {
+  const editedTodo = {
+    ...todo,
+    completed: !todo.completed,
+  };
 
+  axios
+    .put(GenerateTodoURL(BASE_URL, todo.id), editedTodo)
+    .then(() => dispatch(toggleTodo(editedTodo.id)));
+};
