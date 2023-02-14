@@ -1,7 +1,7 @@
 import axios from "axios";
 import { BASE_URL } from "../config/constants";
 import { addTodo, readAllTodos, toggleTodo } from "../store/actions/actions";
-import { GenerateTodoURL } from "../utils/utils";
+import { createToast, generateTodoURL } from "../utils/utils";
 import { v4 as uuidv4 } from "uuid";
 
 export const GetAllTodosAPI = (dispatch) => {
@@ -23,7 +23,10 @@ export const ToggleTodoAPI = (dispatch, todo) => {
     completed: !todo.completed,
   };
 
-  axios
-    .put(GenerateTodoURL(BASE_URL, todo.id), editedTodo)
-    .then(() => dispatch(toggleTodo(editedTodo.id)));
+  axios.put(generateTodoURL(BASE_URL, todo.id), editedTodo).then(() => {
+    dispatch(toggleTodo(editedTodo.id));
+    editedTodo.completed
+      ? createToast("Task Completed!")
+      : createToast("Task Not Complete!");
+  });
 };
