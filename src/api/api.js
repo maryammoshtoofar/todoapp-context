@@ -26,7 +26,13 @@ export const AddTodoAPI = (dispatch, inputValue) => {
     title: inputValue,
     completed: false,
   };
-  axios.post(BASE_URL, newTodo).then((res) => dispatch(addTodo(newTodo)));
+  axios
+    .post(BASE_URL, newTodo)
+    .then(() => {
+      dispatch(addTodo(newTodo));
+      toast.success("Task Added Successfully!");
+    })
+    .catch((e) => toast.error(`Error: ${e.message}, Could not add task!`));
 };
 
 export const ToggleTodoAPI = (dispatch, todo) => {
@@ -37,8 +43,8 @@ export const ToggleTodoAPI = (dispatch, todo) => {
   axios.put(generateTodoURL(todo.id), editedTodo).then(() => {
     dispatch(toggleTodo(editedTodo.id));
     editedTodo.completed
-      ? createToast("Task Completed!")
-      : createToast("Task Not Complete!");
+      ? toast.success("Task Completed!")
+      : toast.info("Task Not Complete!");
   });
 };
 
@@ -47,7 +53,7 @@ export const DeleteTodoAPI = (dispatch, id) => {
     .delete(generateTodoURL(id))
     .then(() => {
       dispatch(removeTodo(id));
-      toast("Task Deleted");
+      toast.info("Task Deleted");
     })
-    .catch((e) => toast(`Something went wrong! Error: ${e.message}`));
+    .catch((e) => toast.error(`Error: ${e.message}, Could not delete task!`));
 };

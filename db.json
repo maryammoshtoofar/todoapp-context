@@ -1,13 +1,13 @@
 {
   "todos": [
     {
-      "id": "db4852fd-b948-44c8-9c50-ba4017526f2e",
       "title": "finish project",
-      "completed": false
+      "completed": false,
+      "id": "db4852fd-b948-44c8-9c50-ba4017526f2e"
     },
     {
       "title": "take out the trash",
-      "completed": false,
+      "completed": true,
       "id": "8c059168-b450-47c4-9286-f1bd8b2480a3"
     },
     {
@@ -21,8 +21,23 @@
       "completed": false
     },
     {
-      "id": "ca611158-c781-405c-8e69-1f5f611da931",
       "title": "study",
+      "completed": true,
+      "id": "ca611158-c781-405c-8e69-1f5f611da931"
+    },
+    {
+      "id": "254ca661-0226-448d-8046-b2759e281bbc",
+      "title": "dsfsf",
+      "completed": false
+    },
+    {
+      "id": "93515558-8c31-4b16-905b-42ace16a48da",
+      "title": "sdf",
+      "completed": false
+    },
+    {
+      "id": "33b873ec-6978-4532-9041-925fe5d095bd",
+      "title": "asdasd",
       "completed": false
     }
   ]
