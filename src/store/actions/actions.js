@@ -24,24 +24,10 @@ export const removeTodo = (todoId) => {
   };
 };
 
-export const editTodo = (todoId, newTodo) => {
-  return {
-    type: EDITTODO,
-    todoId,
-    payload: newTodo,
-  };
-};
 
 export const toggleTodo = (todoId) => {
   return {
     type: TOGGLETODO,
-    payload: todoId,
-  };
-};
-
-export const toggleEdit = (todoId) => {
-  return {
-    type: TOGGLEEDIT,
     payload: todoId,
   };
 };

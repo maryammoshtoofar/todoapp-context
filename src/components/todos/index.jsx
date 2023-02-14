@@ -2,7 +2,7 @@ import { useContext, useEffect } from "react";
 import { TodosContext } from "../../context/todo-context";
 import Todo from "../todo";
 import { TodosList } from "./styled";
-import { GetAllTodosAPI } from "../../api/axios";
+import { GetAllTodosAPI } from "../../api/api";
 
 const Todos = () => {
   const { state, dispatch } = useContext(TodosContext);

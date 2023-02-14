@@ -7,7 +7,7 @@ export const TodosReducer = (state, action) => {
     case ACTIONTYPES.ADDTODO:
       return [...state, action.payload];
     case ACTIONTYPES.REMOVETODO:
-      return state.filter((todo) => todo.id !== action.todoId);
+      return state.filter((todo) => todo.id !== action.payload);
     case ACTIONTYPES.TOGGLETODO:
       return state.map((todo) =>
         todo.id === action.payload

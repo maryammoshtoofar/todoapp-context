@@ -8,8 +8,6 @@ export const REMOVETODO = "REMOVETODO";
 
 export const TOGGLETODO = "TOGGLETODO";
 
-export const EDITTODO = "EDITTODO";
 
-export const TOGGLETHEME = "TOGGLETHEME";
 
-export const TOGGLEEDIT = "TOGGLEEDIT";
+

@@ -3,7 +3,7 @@ import { AddContainer, Input, AddButton } from "./styled";
 import { BsPlusLg } from "react-icons/bs";
 import useInputState from "../../hooks/useInputState";
 import { TodosContext } from "../../context/todo-context";
-import { AddTodoAPI } from "../../api/axios";
+import { AddTodoAPI } from "../../api/api";
 const AddTodo = () => {
   const [inputValue, handleChange, reset] = useInputState("");
   const { dispatch } = useContext(TodosContext);

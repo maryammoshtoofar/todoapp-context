@@ -1,133 +1,18 @@
 {
   "todos": [
     {
-      "title": "delectus aut autem",
-      "completed": false,
-      "id": 1
-    },
-    {
-      "title": "quis ut nam facilis et officia qui",
-      "completed": true,
-      "id": 2
-    },
-    {
-      "title": "fugiat veniam minus",
-      "completed": false,
-      "id": 3
-    },
-    {
-      "title": "et porro tempora",
-      "completed": false,
-      "id": 4
-    },
-    {
-      "title": "laboriosam mollitia et enim quasi adipisci quia provident illum",
-      "completed": true,
-      "id": 5
-    },
-    {
-      "title": "qui ullam ratione quibusdam voluptatem quia omnis",
-      "completed": false,
-      "id": 6
-    },
-    {
-      "id": 7,
-      "title": "illo expedita consequatur quia in",
+      "id": "db4852fd-b948-44c8-9c50-ba4017526f2e",
+      "title": "finish project",
       "completed": false
     },
     {
-      "id": 8,
-      "title": "quo adipisci enim quam ut ab",
-      "completed": true
-    },
-    {
-      "id": 9,
-      "title": "molestiae perspiciatis ipsa",
-      "completed": false
-    },
-    {
-      "id": 10,
-      "title": "illo est ratione doloremque quia maiores aut",
-      "completed": true
-    },
-    {
-      "title": "sdfsdf",
+      "title": "take out the trash",
       "completed": false,
-      "id": 12
+      "id": "8c059168-b450-47c4-9286-f1bd8b2480a3"
     },
     {
-      "title": "hi",
-      "completed": false,
-      "id": 13
-    },
-    {
-      "title": "fff",
-      "completed": false,
-      "id": 14
-    },
-    {
-      "title": "fffff ffff",
-      "completed": false,
-      "id": 15
-    },
-    {
-      "title": "sdf dsfsdf",
-      "completed": false,
-      "id": 16
-    },
-    {
-      "title": "dsf ",
-      "completed": false,
-      "id": 17
-    },
-    {
-      "title": "dsf sdf",
-      "completed": false,
-      "id": 18
-    },
-    {
-      "title": "sdf",
-      "completed": false,
-      "id": 19
-    },
-    {
-      "title": "new",
-      "completed": false,
-      "id": 20
-    },
-    {
-      "title": "hgjgghj",
-      "completed": false,
-      "id": 21
-    },
-    {
-      "title": "vbcv dfgdfg",
-      "completed": false,
-      "id": 22
-    },
-    {
-      "title": "sdfsdf",
-      "completed": false,
-      "id": 23
-    },
-    {
-      "title": "bnfgh",
-      "completed": false,
-      "id": 24
-    },
-    {
-      "title": "m , ",
-      "completed": false,
-      "id": 25
-    },
-    {
-      "id": "a85db524-062b-43b9-852c-f76315dcd131",
-      "title": "sdfsdf",
-      "completed": false
-    },
-    {
-      "id": "0cc0cf6f-5d99-4abe-b19f-2cfffec422f5",
-      "title": "dfg",
+      "id": "99db434a-6288-49c0-aa28-ccebd7cb880a",
+      "title": "go to the doctor",
       "completed": false
     }
   ]

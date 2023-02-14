@@ -1,4 +1,4 @@
-import React, { createContext, useReducer } from "react";
+import { createContext, useReducer } from "react";
 import { TodosReducer } from "../store/reducers/reducers";
 
 export const TodosContext = createContext();
