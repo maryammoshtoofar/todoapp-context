@@ -9,8 +9,9 @@ Simple to-do app using
 -React Toastify
 -Vite(Dev Server)
 
-To install and run :
+To install 
 npm i 
+To run :
 npm run dev
 
 To start json server fake REST API run :
