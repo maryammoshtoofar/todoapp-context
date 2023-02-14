@@ -6,12 +6,18 @@ import {
   removeTodo,
   toggleTodo,
 } from "../store/actions/actions";
-import { createToast, generateTodoURL } from "../utils/utils";
+import { generateTodoURL, generateParamsURL } from "../utils/utils";
 import { v4 as uuidv4 } from "uuid";
 import { toast } from "react-toastify";
 
 export const GetAllTodosAPI = (dispatch) => {
   axios.get(BASE_URL).then((res) => dispatch(readAllTodos(res.data)));
+};
+
+export const GetFilteredTodosAPI = (dispatch, params) => {
+  axios
+    .get(generateParamsURL(params))
+    .then((res) => dispatch(readAllTodos(res.data)));
 };
 
 export const AddTodoAPI = (dispatch, inputValue) => {
@@ -28,7 +34,7 @@ export const ToggleTodoAPI = (dispatch, todo) => {
     ...todo,
     completed: !todo.completed,
   };
-  axios.put(generateTodoURL(BASE_URL, todo.id), editedTodo).then(() => {
+  axios.put(generateTodoURL(todo.id), editedTodo).then(() => {
     dispatch(toggleTodo(editedTodo.id));
     editedTodo.completed
       ? createToast("Task Completed!")
@@ -38,7 +44,7 @@ export const ToggleTodoAPI = (dispatch, todo) => {
 
 export const DeleteTodoAPI = (dispatch, id) => {
   axios
-    .delete(generateTodoURL(BASE_URL, id))
+    .delete(generateTodoURL(id))
     .then(() => {
       dispatch(removeTodo(id));
       toast("Task Deleted");

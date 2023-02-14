@@ -11,8 +11,18 @@
       "id": "8c059168-b450-47c4-9286-f1bd8b2480a3"
     },
     {
-      "id": "99db434a-6288-49c0-aa28-ccebd7cb880a",
       "title": "go to the doctor",
+      "completed": true,
+      "id": "99db434a-6288-49c0-aa28-ccebd7cb880a"
+    },
+    {
+      "id": "60e78337-c869-4748-ac86-155f5a795d06",
+      "title": "wash dishes",
+      "completed": false
+    },
+    {
+      "id": "ca611158-c781-405c-8e69-1f5f611da931",
+      "title": "study",
       "completed": false
     }
   ]

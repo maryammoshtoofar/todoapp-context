@@ -1,9 +1,10 @@
 import { toast } from "react-toastify";
+import { BASE_URL } from "../config/constants";
 
-export const generateTodoURL = (baseURL, id) => {
-  return `${baseURL}/${id}`;
+export const generateTodoURL = (id) => {
+  return `${BASE_URL}/${id}`;
 };
 
-export const createToast = (message) => {
-  toast(message);
+export const generateParamsURL = (params) => {
+  return `${BASE_URL}?${params}`;
 };
