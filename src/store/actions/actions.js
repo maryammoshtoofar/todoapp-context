@@ -1,39 +1,47 @@
 // Todos Actions
 import * as ACTIONTYPES from "./action-types";
 
+const { READTODOS, ADDTODO, REMOVETODO, TOGGLEEDIT, TOGGLETODO } = ACTIONTYPES;
 // Todos Actions
+export const readAllTodos = (todos) => {
+  return {
+    type: READTODOS,
+    payload: todos,
+  };
+};
+
 export const addTodo = (newTodo) => {
   return {
-    type: ACTIONTYPES.ADDTODO,
-    newTodo,
+    type: ADDTODO,
+    payload: newTodo,
   };
 };
 
 export const removeTodo = (todoId) => {
   return {
-    type: ACTIONTYPES.REMOVETODO,
-    todoId,
+    type: REMOVETODO,
+    payload: todoId,
   };
 };
 
 export const editTodo = (todoId, newTodo) => {
   return {
-    type: ACTIONTYPES.EDITTODO,
+    type: EDITTODO,
     todoId,
-    newTodo,
+    payload: newTodo,
   };
 };
 
 export const toggleTodo = (todoId) => {
   return {
-    type: ACTIONTYPES.TOGGLETODO,
-    todoId,
+    type: TOGGLETODO,
+    payload: todoId,
   };
 };
 
 export const toggleEdit = (todoId) => {
   return {
-    type: ACTIONTYPES.TOGGLEEDIT,
-    todoId,
+    type: TOGGLEEDIT,
+    payload: todoId,
   };
 };

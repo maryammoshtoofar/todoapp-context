@@ -14,7 +14,12 @@ const Todos = () => {
   return (
     <TodosList>
       {state.map((todo) => (
-        <Todo key={todo.id} title={todo.title} completed={todo.completed} />
+        <Todo
+          key={todo.id}
+          title={todo.title}
+          completed={todo.completed}
+          id={todo.id}
+        />
       ))}
     </TodosList>
   );

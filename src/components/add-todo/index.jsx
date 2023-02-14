@@ -8,7 +8,10 @@ const AddTodo = () => {
   const [inputValue, handleChange, reset] = useInputState("");
   const { dispatch } = useContext(TodosContext);
   const handleClick = () => {
-    AddTodoAPI(dispatch, inputValue);
+    inputValue
+      ? AddTodoAPI(dispatch, inputValue)
+      : console.log("Please Add a Task first");
+    reset();
   };
 
   return (
