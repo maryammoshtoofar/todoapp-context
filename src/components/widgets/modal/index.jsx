@@ -1,9 +1,9 @@
-import { useContext, useState } from "react";
-import { ModalContext } from "../../context/modal-context";
-import { TodosContext } from "../../context/todo-context";
+import { useContext } from "react";
+import { ModalContext } from "@/context/modal-context";
+import { TodosContext } from "@/context/todo-context";
 import { ModalButton, StyledModal, ModalText } from "./styled";
-import { theme } from "../../styles/Theme";
-import { DeleteTodoAPI } from "../../api/api";
+import { theme } from "@/styles/Theme";
+import { DeleteTodoAPI } from "@/api/api";
 
 const Modal = () => {
   const { showModal, setShowModal } = useContext(ModalContext);

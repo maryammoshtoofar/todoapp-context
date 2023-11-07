@@ -1,12 +1,13 @@
-import { useState } from "react";
 import { ThemeProvider } from "styled-components";
-import { Title, Container, Row } from "./styled";
-import { theme } from "../styles/Theme";
-import { GlobalStyles } from "../styles/Global";
-import AddTodo from "../components/add-todo";
-import Filters from "../components/filters";
-import Todos from "../components/todos";
-import Modal from "../components/modal";
+import { Title } from "@/components/base/title";
+import { Container } from "@/components/base/container";
+import { Row } from "@/components/base/row";
+import { theme } from "@/styles/Theme";
+import { GlobalStyles } from "@/styles/Global";
+import AddTodo from "@/components/widgets/add-todo";
+import Filters from "@/components/widgets/filters";
+import Todos from "@/components/widgets/todos";
+import Modal from "@/components/widgets/modal";
 import { ModalProvider } from "styled-react-modal";
 const Layout = () => {
   return (

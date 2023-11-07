@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import { GetFilteredTodosAPI } from "../../api/api";
-import { TodosContext } from "../../context/todo-context";
+import { GetFilteredTodosAPI } from "@/api/api";
+import { TodosContext } from "@/context/todo-context";
 import { Select } from "./styled";
 
 const Filters = () => {

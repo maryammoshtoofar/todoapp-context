@@ -1,10 +1,10 @@
 import { BsTrashFill, BsCheckLg } from "react-icons/bs";
 import { TodoItem, TodoTitle, ActionButton } from "./styled";
-import { theme } from "../../styles/Theme";
-import { TodosContext } from "../../context/todo-context";
+import { theme } from "@/styles/Theme";
+import { TodosContext } from "@/context/todo-context";
 import { useContext, useEffect } from "react";
-import { ToggleTodoAPI, DeleteTodoAPI } from "../../api/api";
-import { ModalContext } from "../../context/modal-context";
+import { ToggleTodoAPI, DeleteTodoAPI } from "@/api/api";
+import { ModalContext } from "@/context/modal-context";
 
 const Todo = (props) => {
   const { title, completed, id } = props;

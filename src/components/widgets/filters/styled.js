@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import svg from "../../assets/images/triangle-down.svg";
+import svg from "@/assets/images/triangle-down.svg";
 export const Select = styled.select`
 
   border: none;

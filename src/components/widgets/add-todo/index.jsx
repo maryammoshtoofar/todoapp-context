@@ -1,9 +1,9 @@
 import { useContext } from "react";
 import { AddContainer, Input, AddButton } from "./styled";
 import { BsPlusLg } from "react-icons/bs";
-import useInputState from "../../hooks/useInputState";
-import { TodosContext } from "../../context/todo-context";
-import { AddTodoAPI } from "../../api/api";
+import useInputState from "@/hooks/useInputState";
+import { TodosContext } from "@/context/todo-context";
+import { AddTodoAPI } from "@/api/api";
 import { toast } from "react-toastify";
 const AddTodo = () => {
   const [inputValue, handleChange, reset] = useInputState("");
