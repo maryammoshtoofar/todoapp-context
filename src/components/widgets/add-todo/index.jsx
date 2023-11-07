@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { AddContainer, Input, AddButton } from "./styled";
+import { AddButton, Input, AddContainer } from "@/components/base";
 import { BsPlusLg } from "react-icons/bs";
 import useInputState from "@/hooks/useInputState";
 import { TodosContext } from "@/context/todo-context";

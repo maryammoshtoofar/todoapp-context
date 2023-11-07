@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle, css } from "styled-components";
+import  { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
 /* Box sizing rules */

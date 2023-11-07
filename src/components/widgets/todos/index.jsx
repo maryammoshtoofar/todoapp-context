@@ -1,7 +1,7 @@
 import { useContext, useEffect } from "react";
 import { TodosContext } from "@/context/todo-context";
 import Todo from "../todo";
-import { TodosList } from "./styled";
+import { TodosList } from "@/components/base";
 import { GetAllTodosAPI } from "@/api/api";
 
 const Todos = () => {

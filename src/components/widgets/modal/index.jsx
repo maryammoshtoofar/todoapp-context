@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { ModalContext } from "@/context/modal-context";
 import { TodosContext } from "@/context/todo-context";
-import { ModalButton, StyledModal, ModalText } from "./styled";
+import { ModalButton, ModalContainer, ModalText } from "@/components/base";
 import { theme } from "@/styles/Theme";
 import { DeleteTodoAPI } from "@/api/api";
 
@@ -17,7 +17,7 @@ const Modal = () => {
     toggleModal();
   };
   return (
-    <StyledModal
+    <ModalContainer
       isOpen={showModal.isOpen}
       onBackgroundClick={toggleModal}
       onEscapeKeydown={toggleModal}
@@ -31,7 +31,7 @@ const Modal = () => {
           No
         </ModalButton>
       </div>
-    </StyledModal>
+    </ModalContainer>
   );
 };
 

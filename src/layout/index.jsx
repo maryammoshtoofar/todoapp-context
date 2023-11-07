@@ -1,7 +1,5 @@
 import { ThemeProvider } from "styled-components";
-import { Title } from "@/components/base/title";
-import { Container } from "@/components/base/container";
-import { Row } from "@/components/base/row";
+import { Title, Container, Row } from "@/components/base";
 import { theme } from "@/styles/Theme";
 import { GlobalStyles } from "@/styles/Global";
 import AddTodo from "@/components/widgets/add-todo";
