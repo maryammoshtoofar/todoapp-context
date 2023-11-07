@@ -23,7 +23,7 @@ npm i
 npm run dev
 
 To start json server fake REST API run :
-json-server --watch db.json
+npm run json-server
 
 Default port for json-server is http://localhost:3000/todos. if yours in runnig at a different port, 
 simply change BASE_URL in config/constants.js
